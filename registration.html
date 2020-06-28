@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>HMS</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <!-- Ionicons -->
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css" />
+    <!-- iCheck -->
+    <link rel="stylesheet" href="plugins/iCheck/square/blue.css" />
+    <!-- Google Font: Source Sans Pro -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="hold-transition register-page">
+    <div class="register-box">
+      <div class="register-logo">
+        <a href="#"><b>Patient</b>Registration</a>
+      </div>
+
+      <div class="card">
+        <div class="card-body register-card-body">
+          <p class="login-box-msg">Register a new patient</p>
+
+          <form action="#" method="post">
+            <div class="form-group has-feedback">
+              <b><p class="form-control-feedback">Patient SSN Id *</p></b>
+              <input type="text" class="form-control" placeholder="SSN ID" />
+            </div>
+            <div class="form-group has-feedback">
+              <b><p class="form-control-feedback">Patient Name *</p></b>
+              <input type="text" class="form-control" placeholder="Full name" />
+            </div>
+            <div class="form-group has-feedback">
+              <b><p class="form-control-feedback">Patient Age *</p></b>
+              <input type="text" class="form-control" placeholder="Age" />
+            </div>
+            <div class="form-group has-feedback">
+              <b><p class="form-control-feedback">Date of Admission *</p></b>
+              <input type="text" class="form-control" placeholder="Date" />
+            </div>
+
+            <div class="form-group has-feedback">
+              <b><p class="form-control-feedback">Type of bed *</p></b>
+              <select class="form-control" id="type_bed">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group has-feedback">
+              <b><p class="form-control-feedback">Address *</p></b>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="form-group has-feedback">
+              <b><p class="form-control-feedback">State *</p></b>
+              <select class="form-control" id="state">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group has-feedback">
+              <b><p class="form-control-feedback">City *</p></b>
+              <select class="form-control" id="city">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div>
+              <button type="submit" class="btn btn-primary btn-block btn-flat">
+                Register
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- /.form-box -->
+      </div>
+      <!-- /.card -->
+    </div>
+    <!-- /.register-box -->
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- iCheck -->
+    <script src="plugins/iCheck/icheck.min.js"></script>
+    <script>
+      $(function() {
+        $("input").iCheck({
+          checkboxClass: "icheckbox_square-blue",
+          radioClass: "iradio_square-blue",
+          increaseArea: "20%" // optional
+        });
+      });
+    </script>
+  </body>
+</html>
